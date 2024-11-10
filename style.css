@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+@keyframes Shake{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.PageContainer{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.HeaderContainer{
+    background-color: rgb(48, 50, 51);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+ 
+.HeaderContainer img{
+    margin-top: 70px;
+    width: 29%;
+    height: 39.5vh;
+    object-fit: cover;
+    box-shadow: -1px -9px 26px -6px rgba(0, 0, 0, 1);
+    background-color: rgb(43, 44, 44);
+
+}
+
+.AboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 30%;
+    margin-top: 60px;
+    background-color: white;
+    padding: 50px 50px 0px;
+    box-shadow: -18px -6px 46px 1px rgba(0, 0, 0, 1);
+}
+
+@media (max-width:1276px){
+    .AboutMe{
+        width: 80%;
+        min-width: 30%;
+    }
+}
+
+ 
+
+.AboutMe h1{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.856);
+    margin-bottom: 10px
+}
+ 
+
+.AboutMe p{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.2rem;
+}
+
+@media (max-width:2050px){
+    .AboutMe p{
+       font-size: 2rem;
+    }
+}
+ 
+
+.Links{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.AboutMe i{
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.AboutMe i:hover{
+    color: rgb(121, 8, 8);
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+
+ 
+ 
+ 
+.mywork{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+
+
+}
+
+ 
+
+
+.BoxesContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit  ,450px);
+    gap: 60px;
+    margin-bottom: 25px;
+ 
+}
+
+.Box{
+  background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.Box:hover{
+    transform: scale(1.1);
+}
+
+.Top{
+    background-color: rgb(71, 69, 69);
+    color: white;
+    padding: 70px 0px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (max-width:2050px){
+    .Top{
+      font-size: 2.5rem;
+    }
+}
+
+ 
+
+.Bottom{
+    background-color: white;
+    padding: 20px;
+}
+
+@media (max-width:2050px){
+    .Bottom{
+      font-size: 2.5rem;
+    }
+}
+
+ 
+.Up{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width:2050px){
+    .Up{
+      font-size: 2.5rem;
+    }
+}
+
+.FooterContainer{
+    background-color: rgb(43, 44, 44);
+    color: white;
+    padding: 100px;
+    display: flex;
+    justify-content: center; 
+}
+
+@media (max-width:2050px){
+    .FooterContainer{
+      font-size: 1.6rem;
+      
+    }
+}
+
+.ContactInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+ 
+}
+
+.ContactInfoContainer p{
+    font-size: 1.2rem;
+    
+}
+
+ 
+
+.Phone,.Email{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width:2050px){
+    .FooterContainer p,.Phone,.Email{
+      font-size: 2rem;
+      
+    }
+}
+
+
+.Phone i, .Email i{
+    animation-name: Shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    flex-wrap: wrap;
+}
+ 
